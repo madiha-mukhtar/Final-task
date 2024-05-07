@@ -1,0 +1,145 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.logo {
+    width: 116px;
+    height: 26px;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: black;
+    gap: 20px;
+}
+
+.nav-button {
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #F857A6;
+}
+
+.banner {
+    width: 100%;
+    height: 700px;
+    background-image: url("images/banner-img.png");
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+
+.banner-txt {
+    color: white;
+    width: 470px;
+    height: 183px;
+    font-size: 52px;
+    line-height: 70px;
+    font-weight: 700;
+    position: absolute;
+    left: 149px;
+    top: 208px;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.banner-txt>span {
+    color: #F85786;
+}
+
+.banner-txt-2 {
+    width: 438px;
+    height: 78px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    position: absolute;
+    left: 149px;
+    top: 455px;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.banner-btn {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 597px;
+    left: 149px;
+    border-radius: 5px;
+    padding: 5px, 26px, 5px, 26px;
+    gap: 10px;
+    background-color: #F85786;
+    border: 1px solid white;
+    color: white;
+}
+
+@media only screen and (max-width:426px) and (min-width:320px) {
+
+    .navbar {
+        width: 100%;
+        position: relative;
+    }
+
+    .pages {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        left: 130px;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .banner-txt {
+        width: 200px;
+        height: 80px;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 500;
+        left: 100px;
+        top: 120px;
+
+    }
+    .banner-txt-2 {
+        width: 200px;
+        height: 45px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 300;;
+        left: 100px;
+        top: 320px;
+    }
+    .banner-btn {
+        width: 150px;
+        height: 40px;
+        top: 460px;
+        left: 100px;
+    }
+}
